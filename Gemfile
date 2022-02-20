@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem "rails", "~> 7.0.1"
+gem "rails", "~> 7"
 
 gem "sprockets-rails"
 gem "pg", "~> 1.1"
@@ -18,6 +18,7 @@ gem "stimulus-rails"
 gem "bcrypt", "~> 3.1.7"
 gem "bootsnap", require: false
 gem 'devise'
+gem 'cancancan'
 
 # Use Sass to process CSS
 # gem "sassc-rails"

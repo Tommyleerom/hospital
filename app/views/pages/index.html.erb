@@ -1,5 +1,7 @@
 <h1>Welcome to start page</h1>
 
 <% User.all.each do |u| %>
-  <%= u.email %>
+  <p><%= u.email %></p>
+  <p><%= u.name %></p>
+
 <% end %>

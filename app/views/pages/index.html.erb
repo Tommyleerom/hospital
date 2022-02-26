@@ -5,3 +5,11 @@
   <p><%= u.name %></p>
 
 <% end %>
+
+<%= "========================" %>
+
+<% Doctor.all.each do |d| %>
+  <p><%= d.email %></p>
+  <p><%= d.name %></p>
+
+<% end %>

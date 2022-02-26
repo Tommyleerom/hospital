@@ -8,6 +8,6 @@ class User < ApplicationRecord
   attr_writer :login
 
   def login
-    @login || self.username || self.email
+    @login || self.name || self.email
   end
 end

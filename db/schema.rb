@@ -20,7 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_02_27_132949) do
     t.datetime "appointment_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "status", default: 0
+    t.integer "status", default: 1
     t.text "prescription"
     t.index ["doctor_id"], name: "index_appointments_on_doctor_id"
     t.index ["user_id"], name: "index_appointments_on_user_id"

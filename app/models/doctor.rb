@@ -1,6 +1,8 @@
 class Doctor < ApplicationRecord
 
-  has_one :category
+  belongs_to :category
+  has_many :appointments, dependent: :destroy
+  has_many :users, through: :appointments
   
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
